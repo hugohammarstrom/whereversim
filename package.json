@@ -1,6 +1,6 @@
 {
   "name": "@hugohammarstrom/whereversim",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "WhereverSim API",
   "main": "./lib/index.js",
   "module": "./src/index.js",
@@ -10,7 +10,10 @@
     "compile": "babel -d lib/ src/",
     "prepublish": "npm run compile"
   },
-  "keywords": ["WhereverSim", "Sim"],
+  "keywords": [
+    "WhereverSim",
+    "Sim"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/hugohammarstrom/whereversim.git"
@@ -26,6 +29,7 @@
     "@babel/core": "^7.0.0-rc.1",
     "@babel/node": "^7.0.0-rc.1",
     "@babel/preset-env": "^7.0.0-rc.1",
+    "babel-plugin-add-module-exports": "^0.3.3",
     "jest": "^23.5.0",
     "nodemon": "^1.18.3"
   }
