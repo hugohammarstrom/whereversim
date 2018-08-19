@@ -1,0 +1,27 @@
+{
+  "name": "@hugohammarstrom/whereversim",
+  "version": "1.0.0",
+  "description": "WhereverSim API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest . --watchAll",
+    "start": "npx nodemon --exec babel-node tests/index.js",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "keywords": ["WhereverSim", "Sim"],
+  "author": "Hugo Hammarström",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/node": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "jest": "^23.5.0",
+    "nodemon": "^1.18.3"
+  }
+}
