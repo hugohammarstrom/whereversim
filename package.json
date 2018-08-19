@@ -1,8 +1,9 @@
 {
   "name": "@hugohammarstrom/whereversim",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "WhereverSim API",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./src/index.js",
   "scripts": {
     "test": "jest . --watchAll",
     "start": "npx nodemon --exec babel-node tests/index.js",
@@ -10,6 +11,10 @@
     "prepublish": "npm run compile"
   },
   "keywords": ["WhereverSim", "Sim"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hugohammarstrom/whereversim.git"
+  },
   "author": "Hugo Hammarström",
   "license": "ISC",
   "dependencies": {
